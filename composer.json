@@ -1,0 +1,20 @@
+{
+    "name": "julianowte/api-vadu",
+    "description": "A simple integration api vadu",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Julianowte\\ApiVadu\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Juliano Soares",
+            "email": "juliano@wte.com.br"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.9"
+    }
+}
