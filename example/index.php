@@ -8,10 +8,10 @@ site for access:
 use Julianowte\ApiVadu\Vadu;
 
 //ADD AQUI SUAS CREDENCIAIS DO VADU
-$token = 'xxxxxxxxxxx';
+$token = 'xxxxxxxxxxxxxxx';
 
 //DOCUMENTO QUE QUEIRA VERIFICAR, CPF OU CNPJ
-$doc = 'xxxxxxxxxx';
+$doc = 'xxxxxxxxxxx';
 
 $Vadu = new Vadu();
 echo $Vadu->getInfo($token, $doc);
