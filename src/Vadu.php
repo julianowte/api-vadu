@@ -23,8 +23,8 @@ class Vadu
     public function getInfo(string $token, string $doc): string
     {
         try {
-            $doc = preg_replace("/\D+/", '', $doc);
-            if (strlen($doc) == 11) {
+            $doc = strtoupper(preg_replace('/[^0-9A-Za-z]/', '', $doc));
+            if (strlen($doc) === 11 && ctype_digit($doc)) {
                 $this->end_point = 1;
             } else {
                 $this->end_point = 3;
